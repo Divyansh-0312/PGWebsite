@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="E:\website\hotel\home.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="room.html">Rooms</a>
+        <a href="dining-mess.html">Dining & Mess</a>
+        <!--<a href="registration .html">Registration</a>-->
+        <a href="review.html">Review</a> <!-- Added Registration Link -->
+        <a href="#contact">Contact</a>
+    
+    </nav>
+    
+
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="registration.php" method="post">
+            <label for="name">Student Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="mobile">Mobile No:</label>
+            <input type="text" id="mobile" name="mobile" required>
+
+            <label for="address">Residential Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="pin">PIN:</label>
+            <input type="text" id="pin" name="pin" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="college">College Name:</label>
+            <input type="text" id="college" name="college" required>
+
+            <label for="course">Course:</label>
+            <input type="text" id="course" name="course" required>
+
+            <label for="father_name">Father's Name:</label>
+            <input type="text" id="father_name" name="father_name" required>
+
+            <label for="father_mobile">Father's Mobile No:</label>
+            <input type="text" id="father_mobile" name="father_mobile" required>
+
+            <label for="mother_name">Mother's Name:</label>
+            <input type="text" id="mother_name" name="mother_name" required>
+
+            <label for="mother_mobile">Mother's Mobile No:</label>
+            <input type="text" id="mother_mobile" name="mother_mobile" required>
+
+            <label for="local_guardian">Local Guardian:</label>
+            <input type="text" id="local_guardian" name="local_guardian" required>
+
+            <label for="local_guardian_relation">Relation:</label>
+            <input type="text" id="local_guardian_relation" name="local_guardian_relation" required>
+
+            <label for="local_guardian_address">Address:</label>
+            <textarea id="local_guardian_address" name="local_guardian_address" required></textarea>
+
+            <label for="local_guardian_mobile">Mobile No:</label>
+            <input type="text" id="local_guardian_mobile" name="local_guardian_mobile" required>
+
+            <input type="submit" value="Register">
+        </form>
+
+        <!-- Contact Section -->
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to schedule a visit? Feel free to reach out to us:</p>
+    <p>Email: <a href="mailto:pkgirlshostel0601@gmail.com">pkgirlshostel0601@gmail.com</a></p>
+    <p>Phone: <a href="tel:+91 9508 2929 98">+91 9508 2929 98</a></p>
+</section>
+
+    </div>
+</body>
+</html>

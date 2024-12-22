@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Reviews</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submit a Review</h1>
+        <form method="POST" action="">
+            <label for="domain">Domain:</label>
+            <select name="domain" required>
+                <option value="Mess Food Quality">Mess Food Quality</option>
+                <option value="Rooms">Rooms</option>
+                <option value="Overall Facilities">Overall Facilities</option>
+                <!-- Add more domains as needed -->
+            </select>
+            <br>
+            <label for="review_text">Review:</label>
+            <textarea name="review_text" required></textarea>
+            <br>
+            <button type="submit" name="submit_review">Submit</button>
+        </form>
+
+        <h2>Reviews</h2>
+        <ul>
+            <?php foreach ($reviews as $review): ?>
+                <li>
+                    <strong><?php echo htmlspecialchars($review['domain']); ?></strong>: 
+                    <?php echo nl2br(htmlspecialchars($review['review_text'])); ?>
+                    
+                    <h3>Admin Replies</h3>
+                    <ul>
+                        <?php foreach ($review['replies'] as $reply): ?>
+                            <li><?php echo nl2br(htmlspecialchars($reply['reply_text'])); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</body>
+</html>
